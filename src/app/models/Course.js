@@ -22,4 +22,4 @@ mongoose.plugin(slug);
 Course.plugin(mongooseDelete, { deletedAt: true, overrideMethods: "all" });
 Course.plugin(AutoIncrement);
 
-module.exports = mongoose.model("Model", Course, "course");
+module.exports = mongoose.model("course", Course);
